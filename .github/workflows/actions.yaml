@@ -8,6 +8,13 @@ jobs:
     steps:
       - name: ls files
         run: |
+          pwd
+          ls -lrta
+      - name: checkout repo
+        uses: actions/checkout@main
+      - name: ls files after
+        run: |
+          pwd
           ls -lrta
       - name: simple js action
         id: greet
